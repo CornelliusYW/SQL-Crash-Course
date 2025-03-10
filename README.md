@@ -2,7 +2,7 @@
 
 ![SQL Crash Course](image/sql_crash_course.jpg)
 
-Hi! You must be here because of our's [Cornellius from Non-Brand Data](https://www.nb-data.com/) and [Josep from databites.tech](https://www.databites.tech/) newest SQL Crash Course.
+Hi! You must be here because of our's ([Cornellius from Non-Brand Data](https://www.nb-data.com/) and [Josep from databites.tech](https://www.databites.tech/)) newest SQL Crash Course.
 
 Whether you're just starting out or looking to sharpen your SQL skills, this series will take you from zero to hero with a structured, easy-to-follow approach. Each post will break down essential SQL concepts, helping you build confidence in SQL following the same style as my previous courses.
 
