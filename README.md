@@ -19,3 +19,10 @@ We will structure the series into seven key topics to guide you step by step:
 7. **Real-world Problems** – Applying SQL to practical challenges
 
 The repository will be updated over time with all the articles and code used in the series, so stay tuned!
+
+## Table of Contents
+| Article Title | Article Link | Code Implementation |
+|---------------|--------------|---------------------|
+| Launching the SQL Crash Course – From Zero to Hero! 🚀 | [Read here](https://www.databites.tech/p/launching-the-sql-crash-course-from) | |
+| #1 What is SQL? | [Read here](https://www.nb-data.com/p/2-what-is-sql) | |
+| #2 Why learn SQL? | [Read here](https://www.databites.tech/p/2-why-learn-sql) | |
