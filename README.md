@@ -28,3 +28,5 @@ The repository will be updated over time with all the articles and code used in 
 | #2 Why learn SQL? | [Read here](https://www.databites.tech/p/2-why-learn-sql) |  |  |
 | #3 Relational Data & Models | [Read here](https://www.databites.tech/p/3-relational-data-and-models) |  |  |
 | #4 SQL Basic Commands | [Read here](https://www.nb-data.com/p/4-sql-basic-commands) | [View script](sql_scripts/4_SQL_Basic_Commands.sql) | [Run playground](https://www.db-fiddle.com/f/tLA6Ca3iAcABo7Bkgm87nE/1) |
+|#5 Sorting & Limiting | [Read here](https://www.databites.tech/p/5-sorting-and-limiting) | [View script](sql_scripts/5_Sorting_and_Limiting.sql)| [Run playground](https://www.db-fiddle.com/f/gsJfafADqkwjrHBLernRZP/0) |
+|#6 Aggregate Functions | [Read here](https://www.nb-data.com/p/6-aggregate-functions) | [View script](sql_scripts/6_Aggregate_Functions.sql) | [Run playground](https://www.db-fiddle.com/f/w3trdsFQ23og1tYerokVMm/0) |
