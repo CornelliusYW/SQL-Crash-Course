@@ -30,3 +30,5 @@ The repository will be updated over time with all the articles and code used in 
 | #4 SQL Basic Commands | [Read here](https://www.nb-data.com/p/4-sql-basic-commands) | [View script](sql_scripts/4_SQL_Basic_Commands.sql) | [Run playground](https://www.db-fiddle.com/f/tLA6Ca3iAcABo7Bkgm87nE/1) |
 |#5 Sorting & Limiting | [Read here](https://www.databites.tech/p/5-sorting-and-limiting) | [View script](sql_scripts/5_Sorting_and_Limiting.sql)| [Run playground](https://www.db-fiddle.com/f/gsJfafADqkwjrHBLernRZP/0) |
 |#6 Aggregate Functions | [Read here](https://www.nb-data.com/p/6-aggregate-functions) | [View script](sql_scripts/6_Aggregate_Functions.sql) | [Run playground](https://www.db-fiddle.com/f/w3trdsFQ23og1tYerokVMm/0) |
+|#7 JOINs (Left, Right, Inner & Full) | [Read here](https://www.databites.tech/p/7-joins-left-right-inner-and-full) | [View script](sql_scripts/7_Join.sql) | [Run playground](https://www.db-fiddle.com/f/8rkgKHYSFEmmhjdR9P4iii/3) |
+|#8 UNION & UNION ALL | [Read here](https://www.nb-data.com/p/8-union-and-union-all) | [View script](sql_scripts/8_Union.sql) | [Run playground](https://www.db-fiddle.com/f/pTrpDgGYGejUmAMXTtaQNm/2) |
