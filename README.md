@@ -40,3 +40,7 @@ The repository will be updated over time with all the articles and code used in 
 |#14 Views | [Read here](https://www.databites.tech/p/14-views) | [View script](https://github.com/rfeers/SQL-Crash-Course/blob/main/sql_scripts/14_Views.sql) | [Run playground](https://www.db-fiddle.com/f/vht5JRmZEFXFguackAoMJW/0) |
 |#15 CRUD Operations | [Read here](https://www.nb-data.com/p/15-crud-operations) | [View script](https://github.com/CornelliusYW/SQL-Crash-Course/blob/main/sql_scripts/15_CRUD_Operations.sql) | [Run playground](https://www.db-fiddle.com/f/wKgWsY7o6ua4u7EedRrfco/1) |
 |#16 Dabase Modifications | [Read here](https://www.databites.tech/p/16-database-modifications) | [View script](https://github.com/CornelliusYW/SQL-Crash-Course/blob/main/sql_scripts/16_Database_modifications.sql) | [Run playground](https://www.db-fiddle.com/f/fLFqwktLC3vQadZKnqZf8o/0) |
+
+|#17 Indexing and Optimization | [Read here](https://www.nb-data.com/p/17-indexing-and-optimization) | [View script](https://github.com/CornelliusYW/SQL-Crash-Course/blob/main/sql_scripts/17_Indexing_and_Optimization.sql) | [Run playground](https://www.db-fiddle.com/f/pvMeVUQx5MNp2333YyJjPu/0) |
+
+|#18 Modular Code | [Read here](https://www.databites.tech/p/18-generating-modular-code) | [View script](https://github.com/CornelliusYW/SQL-Crash-Course/blob/main/sql_scripts/18_Modular_Code.sql) | [Run playground](https://www.db-fiddle.com/f/ezePzh6hZtarATN33nuHRV/1) |
