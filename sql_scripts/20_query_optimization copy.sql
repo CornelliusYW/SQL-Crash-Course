@@ -1,44 +1,41 @@
-WITH 
--- MODULE 1
+-- 1️⃣ Use EXISTS Instead of JOIN + DISTINCT
+SELECT *  
+FROM newsletters n  
+WHERE EXISTS (  
+  SELECT 1  
+  FROM posts p  
+  WHERE p.newsletter_id = n.id  
+  AND p.name = 'DataBites'  
+);  
 
-post_points AS (
-SELECT 
-  p.id AS post_id,
-  p.name AS post_name,
-  p.newsletter_id,
-  SUM(i.points) AS total_points
-FROM posts p
-JOIN interactions i ON p.id = i.post_id
-GROUP BY p.id, p.name, p.newsletter_id
-),
 
--- MODULE 2
-ranked_posts AS 
-(
-SELECT 
-  pp.*,
-  RANK() OVER (PARTITION BY newsletter_id ORDER BY total_points DESC) AS rank_within_newsletter
-FROM post_points pp
-),
+-- 2️⃣ Select Only What You Need
+SELECT id, name, published_at  
+FROM posts  
+WHERE published_at >= '2024-01-01';  
 
--- MODULE 3
-newsletter_avg_points AS (
-  SELECT 
-    newsletter_id,
-    AVG(total_points) AS avg_post_score
-  FROM post_points
-  GROUP BY newsletter_id
-)
+-- 3️⃣ Index Strategically
+CREATE INDEX idx_posts_date ON posts(published_at); 
 
--- FINAL SELECTION
-SELECT 
-  n.name AS newsletter_name,
-  rp.post_name,
-  rp.total_points,
-  rp.rank_within_newsletter,
-  nap.avg_post_score
-FROM ranked_posts rp
-JOIN newsletters n ON n.id = rp.newsletter_id
-JOIN newsletter_avg_points nap ON nap.newsletter_id = rp.newsletter_id
-WHERE rp.rank_within_newsletter <= 3
-ORDER BY n.name, rp.rank_within_newsletter;
+-- 4️⃣ Break Queries into CTEs
+WITH post_totals AS (  
+  SELECT post_id, SUM(points) AS total  
+  FROM interactions  
+  GROUP BY post_id  
+)  
+SELECT p.id  
+FROM posts p  
+JOIN post_totals pt ON p.id = pt.post_id  
+WHERE pt.total > (SELECT AVG(total) FROM post_totals);  
+
+-- 5️⃣ Avoid SELECT * in Subqueries
+SELECT n.name,  
+  (SELECT COUNT(id) FROM posts p WHERE p.newsletter_id = n.id) AS post_count  
+FROM newsletters n;  
+
+-- 6️⃣ Use JOIN Instead of Subqueries for Filters
+SELECT DISTINCT n.id  
+FROM newsletters n  
+JOIN posts p ON n.id = p.newsletter_id  
+WHERE p.name LIKE '%SQL%';  
+
